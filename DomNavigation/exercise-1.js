@@ -9,3 +9,22 @@
 
     4. Select the <a> tag that links to "Jim", the CEO
 */
+
+console.log(
+  document.body.firstElementChild.nextElementSibling.lastElementChild
+    .firstElementChild.firstElementChild.nextElementSibling.firstElementChild
+    .innerText
+);
+
+console.log(
+  document.body.firstElementChild.nextElementSibling.firstElementChild
+    .nextElementSibling.firstElementChild.firstElementChild.firstElementChild
+    .firstElementChild.nextElementSibling.firstElementChild.innerText
+);
+
+console.log(
+  document.body.firstElementChild.nextElementSibling.firstElementChild
+    .nextElementSibling.firstElementChild.firstElementChild.firstElementChild
+    .nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling
+    .firstElementChild.innerHTM
+);

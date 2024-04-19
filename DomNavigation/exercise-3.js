@@ -13,3 +13,7 @@
            "virtually" from inside the dev tools? (not
             actually manually clicking it)
 */
+
+console.log(
+  document.querySelector('[data-currenttabindex="2"]').firstElementChild
+);

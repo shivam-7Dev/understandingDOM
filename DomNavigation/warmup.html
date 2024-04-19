@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Warmup Soultion</title>
+  </head>
+  <body>
+    <h1>Warmup Soultion</h1>
+    <div>
+      <p><span>This is pargraph tag</span></p>
+    </div>
+    <!--This is paragraph tag-->
+    <script defer>
+      /*
+         * selecting the title tag (WITHOUT querySelector)
+         - The title tag
+         - The Comment tag
+         - Any text Node
+         - The p tag
+         - The span tag
+      */
+      const title = document.head.firstElementChild;
+      //   title.innerHTML = "changing text";
+      console.log(title);
+      const childNodes = document.body.childNodes;
+      console.log(childNodes[5]); //NodeList(8) [text, h1, text, div, text, comment, text, script]
+      const children = document.body.children; //HTMLCollection(3) [h1, div, script]
+      const lastElementChild = document.body.lastElementChild;
+      const commentTag = lastElementChild.previousSibling.previousSibling;
+      console.log(commentTag);
+      const textNode = document.body.childNodes[0];
+      console.log(textNode);
+
+      //selecting P tag
+      const pTag =
+        document.body.firstElementChild.nextElementSibling.firstElementChild;
+      console.log(pTag);
+
+      //selecting the span node
+      const span =
+        document.body.firstElementChild.nextElementSibling.firstElementChild
+          .firstElementChild;
+      console.log(span);
+    </script>
+  </body>
+</html>
