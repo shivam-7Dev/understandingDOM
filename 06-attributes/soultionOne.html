@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>solution one</title>
+  </head>
+  <body>
+    <h1>Greetings Fellas!</h1>
+    <input type="text" />
+    <script>
+      document.querySelector("input").setAttribute("type", "checkbox");
+      setInterval(() => {
+        //checking and unchecking the value after one value just for fun
+        document.querySelector("input").checked =
+          !document.querySelector("input").checked;
+      }, 2000);
+    </script>
+  </body>
+</html>

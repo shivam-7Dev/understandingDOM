@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>solution three</title>
+  </head>
+  <body>
+    <h1>hello Boss</h1>
+    <script>
+      setInterval(() => {
+        const red = Math.floor(Math.random() * 256);
+        const green = Math.floor(Math.random() * 256);
+        const blue = Math.floor(Math.random() * 256);
+        document.querySelector(
+          "h1"
+        ).style.color = `rgb(${red}, ${green}, ${blue})`;
+      }, 1000);
+    </script>
+  </body>
+</html>
