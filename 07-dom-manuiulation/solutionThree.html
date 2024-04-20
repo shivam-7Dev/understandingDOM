@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>solution three</title>
+  </head>
+  <body>
+    <script>
+      //doing easy version
+      const p = document.createElement("p");
+      p.innerText = "This is paraGraph Tag";
+      const div = document.createElement("div");
+      div.innerText = "This is a div tag";
+      const nav = document.createElement("nav");
+      nav.innerText = "This is nav Tag";
+      const elements = [p, div, nav];
+      setInterval(() => {
+        const number = Math.floor(Math.random() * 3);
+        //clear the body
+        document.body.innerHTML = ""; // Clear previous content
+        //set the body
+        document.body.append(elements[number]);
+      }, 1000);
+    </script>
+  </body>
+</html>

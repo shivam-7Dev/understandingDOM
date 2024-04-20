@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>solution one</title>
+  </head>
+  <body>
+    <script>
+      const strong = document.createElement("strong");
+      strong.innerText = "to meet ";
+      const text1 = document.createTextNode("Hello there, nice ");
+      const text2 = document.createTextNode(" you!");
+      const para = document.createElement("p");
+      para.setAttribute("id", "intro");
+      para.append(text1);
+      para.append(strong);
+      para.append(text2);
+      document.body.append(para);
+    </script>
+  </body>
+</html>

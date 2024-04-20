@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>solution two</title>
+  </head>
+  <body>
+    <script>
+      function createParagraph(text, attributes) {
+        const para = document.createElement("p");
+        para.innerText = text;
+
+        for (let [key, value] of Object.entries(attributes)) {
+          para.setAttribute(key, value);
+        }
+        return para;
+      }
+
+      const p1 = createParagraph("Hello", { id: "one", class: "big" });
+      const p2 = createParagraph("Hello two", { id: "one", class: "big" });
+      const p3 = createParagraph("Hello  three", { id: "one", class: "big" });
+
+      document.body.append(p1);
+      document.body.append(p2);
+      document.body.append(p3);
+    </script>
+  </body>
+</html>
