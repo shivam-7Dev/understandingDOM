@@ -13,3 +13,6 @@
        - Replace the <h1> tag with an <h2> tag but
          preserve original text inside
 */
+console.log(document.querySelector("h1").outerHTML);
+//'<h1>Hello There!</h1>'
+document.querySelector("h1").outerHTML = "<h2>Hello There!</h2>";

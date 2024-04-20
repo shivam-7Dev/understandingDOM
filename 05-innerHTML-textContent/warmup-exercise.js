@@ -16,3 +16,6 @@
     4. Change the innerHTML of the <div> tag to contain
        an <article> tag with a <p> tag inside with some text
 */
+document.querySelector("title").innerText = "changed title";
+document.querySelector("div").innerHTML =
+  "<article><p> text changed</p></article>";

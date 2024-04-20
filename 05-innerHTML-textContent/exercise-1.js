@@ -14,3 +14,8 @@
 
     4. How would you change the Comment Node's text?
 */
+
+document.querySelector("p").textContent =
+  "overRiding the value of the paragaph tag";
+document.body.childNodes[3].textContent = "changing the data of text content";
+document.body.childNodes[3].data = "changing the data of text content";
