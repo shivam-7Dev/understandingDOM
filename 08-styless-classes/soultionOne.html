@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>solution one</title>
+    <style>
+      .large {
+        font-size: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello there</h1>
+    <p>some text</p>
+    <script>
+      //adding the class large after one second
+      setTimeout(() => {
+        document.querySelector("p").classList.add("large");
+      }, 1000);
+      //removing the class large after one second
+      setTimeout(() => {
+        document.querySelector("p").classList.remove("large");
+      }, 2000);
+    </script>
+  </body>
+</html>

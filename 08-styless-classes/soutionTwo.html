@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>solution two</title>
+  </head>
+  <body>
+    <p>Hello there</p>
+    <script>
+      let styleTag = document.createElement("style");
+      styleTag.innerText = ".large{font-size:48px}";
+      document.head.append(styleTag);
+
+      //adding large class to the p tag after one second
+      setTimeout(() => {
+        document.querySelector("p").classList.add("large");
+      }, 1000);
+    </script>
+  </body>
+</html>
