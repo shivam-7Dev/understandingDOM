@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solution Two</title>
+  </head>
+  <body>
+    <button>Play !</button>
+    <p id="win" hidden>You're lucky!</p>
+    <p id="lose" hidden>Better luck next time!!</p>
+    <script>
+      function handleClick() {
+        const number = Math.floor(Math.random() * 11);
+
+        if (number > 7) {
+          console.log("You're lucky!", number);
+          const winParagraph = document.querySelector("#win");
+          winParagraph.removeAttribute("hidden");
+          const loseParagraph = document.querySelector("#lose");
+          loseParagraph.setAttribute("hidden", true);
+        } else {
+          console.log("Better luck next time!", number);
+          const winParagraph = document.querySelector("#win");
+          winParagraph.setAttribute("hidden", true); //
+          const loseParagraph = document.querySelector("#lose");
+          loseParagraph.removeAttribute("hidden");
+        }
+      }
+      const button = document.querySelector("button");
+      button.addEventListener("click", handleClick);
+    </script>
+  </body>
+</html>

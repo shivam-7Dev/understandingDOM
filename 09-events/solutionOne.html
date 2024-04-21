@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>warm Up</title>
+  </head>
+  <body>
+    <button>Show SecretE</button>
+    <p id="para" hidden>A magical portal has opened!</p>
+
+    <script>
+      function handleOnmouseenter() {
+        const para = document.querySelector("p");
+        para.toggleAttribute("hidden");
+      }
+      function handleOnmousleave() {
+        const para = document.querySelector("p");
+        para.toggleAttribute("hidden");
+      }
+      const button = document.querySelector("button");
+
+      button.addEventListener("mouseenter", handleOnmouseenter);
+      button.addEventListener("mouseleave", handleOnmousleave);
+    </script>
+  </body>
+</html>

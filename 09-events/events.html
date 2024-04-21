@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>events</title>
+  </head>
+  <body>
+    <button id="btn">click Me</button>
+    <script>
+      function meow() {
+        console.log("meow");
+      }
+      function hello() {
+        console.log("hello There");
+      }
+      const button = document.querySelector("button");
+      button.addEventListener("click", hello);
+      button.addEventListener("mouseover", meow);
+    </script>
+  </body>
+</html>

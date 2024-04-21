@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soulution Three</title>
+  </head>
+  <body>
+    <input type="text" />
+    <p></p>
+    <script>
+      const p = document.querySelector("p");
+
+      function handleInput(e) {
+        console.log(this);
+        const data = e.data;
+        // console.log(data);
+        p.textContent = input.value;
+        p.style.color = "blue";
+      }
+      const input = document.querySelector("input");
+      input.addEventListener("input", handleInput);
+    </script>
+  </body>
+</html>
