@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>solution three</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" />
+      <br />
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" />
+      <br />
+      <label for="email">Email:</label>
+      <input type="text" id="email" />
+      <br />
+      <button type="submit">submit</button>
+    </form>
+    <script>
+      const handleSubmit = function (event) {
+        event.preventDefault();
+        console.dir(event.target);
+      };
+      const form = document.querySelector("form");
+      form.addEventListener("submit", handleSubmit);
+    </script>
+  </body>
+</html>

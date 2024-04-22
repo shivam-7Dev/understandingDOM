@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soultion Two</title>
+  </head>
+  <body>
+    <table>
+      <head>
+        <tr>
+          <td>S.No</td>
+          <td>Name</td>
+          <td>Age</td>
+        </tr>
+      </head>
+      <body>
+        <tr>
+          <td>1</td>
+          <td>shivam</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Atul</td>
+          <td>26</td>
+        </tr>
+      </body>
+    </table>
+    <script>
+      const handleClick = function (event) {
+        console.log(event.target.textContent);
+      };
+      //use the capture phase from continuing to reach it to the target
+
+      const handleCapturing = function (event) {
+        event.stopPropagation();
+        console.log(event.target.textContent);
+      };
+      const table = document.querySelector("tbody");
+      table.addEventListener("click", handleClick);
+      table.addEventListener("click", handleCapturing, true);
+    </script>
+  </body>
+</html>
